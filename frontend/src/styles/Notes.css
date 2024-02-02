@@ -1,0 +1,119 @@
+.note-editor {
+    background-color: #333; /* Dark background for the note editor section */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto; /* Center the editor on the page */
+}
+
+.note-editor form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.note-editor input[type='text'],
+.note-editor textarea {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none; /* Remove border */
+    background-color: #fff;
+}
+
+.note-editor button {
+    background-color: #6c5ce7; /* Button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.note-editor button:hover {
+    background-color: #574b90;
+}
+
+.note-list {
+    display: flex;
+    justify-content: center; /* Center the notes horizontally */
+    gap: 10px; /* Space between notes */
+    flex-wrap: wrap; /* Allow notes to wrap onto the next line */
+    padding: 20px;
+}
+
+.note {
+    background-color: #333; /* Dark background for the note */
+    color: #fff; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 100px; /* Minimum width for notes */
+    cursor: pointer;
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.note:hover {
+    transform: translateY(-5px); /* Raise the note on hover */
+}
+
+.note-item {
+    background-color: #333; /* Dark background for each note */
+    color: #fff; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Space between notes */
+    width: 100%; /* Full width for better layout */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.note-item button {
+    background-color: #6c5ce7; /* Button color */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-right: 10px; /* Space between buttons */
+}
+
+.note-item button:hover {
+    background-color: #574b90; /* Hover effect */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .note-list {
+        flex-direction: column;
+    }
+
+    .note-editor,
+    .note-list {
+        width: 90%; /* Make the editor and notes take up more width on small screens */
+        max-width: none;
+    }
+
+    .note {
+        width: 100%; /* Full width notes on small screens */
+        margin-bottom: 10px; /* Add some space between stacked notes */
+    }
+}
+
+/* Logout button style */
+.logout-button {
+    background-color: #6c5ce7; /* Button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-right: 10px; /* Space between buttons */
+}
+
+.logout-button:hover {
+    background-color: #574b90; /* Hover effect */
+}
